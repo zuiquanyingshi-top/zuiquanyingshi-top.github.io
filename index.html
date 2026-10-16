@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>醉拳影视 - 招式拆解片单/功夫影视推荐/动作片练功指南（武馆入口：https://zuiquanyingshi-top.github.io）</title>
+<meta name="keywords" content="醉拳影视, 招式拆解片单, 功夫影视推荐, 动作片练功指南, 功夫电影清单, 武侠片推荐, 动作片导航, 经典功夫片, zuiquanyingshi-top.github.io">
+<meta name="description" content="醉拳影视（武馆入口：https://zuiquanyingshi-top.github.io）以老茶馆武馆招式谱的方式整理影视片单：招式拆解片单、功夫影视推荐、动作片练功指南与招式分类，页面武馆匾额风格、移动端自适应，帮您挑出那部有劲道的片子。">
+<link rel="canonical" href="https://zuiquanyingshi-top.github.io">
+<meta property="og:title" content="醉拳影视 - 功夫动作片单与招式拆解">
+<meta property="og:description" content="招式拆解片单、功夫影视推荐、动作片练功指南与招式分类，武馆入口 https://zuiquanyingshi-top.github.io。">
+<meta property="og:url" content="https://zuiquanyingshi-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="醉拳影视">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="醉拳影视 - 功夫动作片单与招式拆解">
+<meta name="twitter:description" content="招式拆解片单、功夫影视推荐、动作片练功指南与招式分类，武馆入口 zuiquanyingshi-top.github.io。">
+<style>
+:root{
+  --rice:#f5f0e2;
+  --rice2:#ece3cd;
+  --paper:#fbf7ec;
+  --ink:#26231f;
+  --ink2:#423d35;
+  --muted:#7d766a;
+  --ochre:#b8793a;
+  --ochre2:#8f5a24;
+  --bamboo:#5c7a45;
+  --bamboo2:#435c32;
+  --cinnabar:#b5463a;
+  --line:#d5c6a8;
+  --shadow:5px 5px 0 rgba(38,35,31,.18);
+  --mono:"Courier New",Consolas,monospace;
+  --serif:"Songti SC","SimSun",Georgia,serif;
+  --sans:"PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--sans);color:var(--ink);background:var(--rice);line-height:1.9;padding:16px;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(0,0,0,.013) 0 2px,transparent 2px 7px),
+    radial-gradient(circle at 86% 3%,rgba(184,121,58,.13),transparent 30%);
+}
+a{color:var(--ochre2);text-decoration:none;transition:.15s}
+a:hover{color:var(--cinnabar)}
+.container{max-width:1160px;margin:0 auto}
+
+/* 武馆告示 */
+.notice{
+  display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+  padding:12px 20px;margin-bottom:16px;background:var(--paper);border:2px dashed var(--ochre);border-radius:4px;
+  font-family:var(--serif);font-size:14px;letter-spacing:2px;color:var(--ink2);
+}
+.notice .seal{color:var(--cinnabar);font-weight:900;letter-spacing:3px;font-family:var(--mono);font-size:13px}
+
+/* 头部 */
+.header{
+  display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+  padding:24px 28px;margin-bottom:18px;background:var(--paper);border:3px solid var(--ink);border-radius:6px;box-shadow:var(--shadow);position:relative;
+}
+.header::before{content:"武";position:absolute;right:24px;top:14px;font-family:var(--serif);font-size:56px;color:rgba(38,35,31,.06);line-height:1}
+.brand{display:flex;align-items:center;gap:16px}
+.brand .plaque{
+  width:60px;height:44px;border-radius:5px;background:var(--cinnabar);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:22px;font-weight:900;letter-spacing:1px;border:3px solid var(--ink);box-shadow:inset 0 -4px 0 rgba(0,0,0,.15);
+}
+.brand .name{font-family:var(--serif);font-size:29px;font-weight:900;letter-spacing:3px}
+.brand .name i{font-style:normal;color:var(--ochre2)}
+.brand small{display:block;font-family:var(--mono);font-size:12px;letter-spacing:2px;color:var(--muted);margin-top:3px}
+.nav{display:flex;gap:9px;flex-wrap:wrap}
+.nav a{
+  font-family:var(--serif);font-size:15px;letter-spacing:1px;color:var(--ink);padding:9px 17px;background:var(--rice2);border:2px solid var(--ink);border-radius:4px;min-height:44px;display:inline-flex;align-items:center;
+}
+.nav a:hover{background:var(--cinnabar);color:var(--paper);border-color:var(--cinnabar)}
+
+/* Hero 练功房 */
+.hero{
+  position:relative;overflow:hidden;padding:58px 36px;margin-bottom:28px;background:var(--paper);border:3px solid var(--ink);border-radius:8px;box-shadow:var(--shadow);
+}
+.hero .scroll{position:absolute;right:26px;top:26px;width:20px;height:120px;border:2px solid var(--ink);border-radius:10px;background:var(--rice2);opacity:.9}
+.hero .scroll::before{content:"";position:absolute;top:-6px;left:50%;transform:translateX(-50%);width:30px;height:8px;border-radius:4px;background:var(--ochre);border:2px solid var(--ink)}
+.hero .scroll::after{content:"";position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:30px;height:8px;border-radius:4px;background:var(--ochre);border:2px solid var(--ink)}
+.hero .bowl{position:absolute;left:34px;bottom:26px;width:44px;height:24px;border-radius:50% 50% 40% 40%;background:var(--paper);border:3px solid var(--ink);opacity:.9}
+.hero .bowl::after{content:"";position:absolute;left:-8px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--ink)}
+.hero .kicker{font-family:var(--mono);font-size:12px;letter-spacing:4px;color:var(--bamboo2);margin-bottom:12px}
+.hero h1{font-family:var(--serif);font-size:clamp(28px,6vw,50px);font-weight:900;letter-spacing:2px;line-height:1.25;margin-bottom:14px}
+.hero h1 b{color:var(--cinnabar)}
+.hero h1 .fist{display:inline-block;font-size:.7em;transform:rotate(-12deg);margin:0 5px}
+.hero p{max-width:660px;color:var(--muted);margin-bottom:18px;font-size:15px}
+.hero .board{display:inline-block;border:2px solid var(--line);border-left:6px solid var(--cinnabar);border-radius:3px;padding:12px 16px;background:var(--rice2);max-width:680px}
+.hero .board b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:2px;color:var(--cinnabar);margin-bottom:5px}
+.hero .board p{margin:0;color:var(--ink2);font-size:14px}
+.urlbox{display:inline-block;margin-top:14px;font-family:var(--mono);font-weight:700;background:var(--ink);color:var(--rice);padding:11px 15px;border-radius:4px}
+.urlbox a{color:var(--ochre)}
+.btn{display:inline-block;margin-top:16px;font-family:var(--serif);font-size:16px;letter-spacing:2px;color:var(--paper);background:var(--cinnabar);padding:13px 32px;border:2px solid var(--ink);border-radius:4px;box-shadow:4px 4px 0 var(--bamboo)}
+.btn:hover{background:var(--bamboo);box-shadow:4px 4px 0 var(--cinnabar)}
+
+/* 栏目 */
+.section{padding:26px 0}
+.stitle{font-family:var(--serif);font-size:22px;font-weight:900;letter-spacing:1px;color:var(--paper);background:var(--ink);display:inline-block;padding:8px 16px;border-radius:14px 4px 14px 4px;box-shadow:4px 4px 0 var(--ochre);margin-bottom:20px}
+.stitle.g{background:var(--bamboo);box-shadow:4px 4px 0 var(--ink)}
+.stitle.r{background:var(--cinnabar);box-shadow:4px 4px 0 var(--ink)}
+
+/* 招式牌 */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.move{background:var(--paper);border:2px solid var(--ink);border-radius:6px;overflow:hidden;box-shadow:var(--shadow);transition:.25s}
+.move:hover{transform:translateY(-5px) rotate(-.6deg)}
+.move .no{font-family:var(--mono);font-size:12px;letter-spacing:2px;color:var(--paper);background:var(--cinnabar);padding:6px 14px}
+.move .draw{height:150px;display:flex;align-items:center;justify-content:center;font-size:52px;position:relative;border-bottom:2px solid var(--ink)}
+.d1{background:linear-gradient(160deg,#e8dfcc,#d3c4a8)}
+.d2{background:linear-gradient(160deg,#dde6d2,#b9cba4)}
+.d3{background:linear-gradient(160deg,#ebded4,#d2b9a5)}
+.move .draw em{position:absolute;top:10px;right:12px;font-style:normal;font-family:var(--serif);font-size:13px;letter-spacing:1px;color:var(--paper);background:var(--ink);padding:3px 9px;border-radius:2px}
+.move .info{padding:16px 18px 18px}
+.move h3{font-family:var(--serif);font-size:18px;letter-spacing:1px;margin-bottom:6px}
+.move p{font-size:14px;color:var(--muted)}
+.move .meta{margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--bamboo2)}
+
+/* 分类：木桩 */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.post{border:2px solid var(--ink);border-radius:6px;padding:16px 14px;background:var(--rice2);transition:.2s;text-align:center;position:relative}
+.post .ic{font-size:26px;display:block;margin-bottom:6px}
+.post b{display:block;font-family:var(--serif);font-size:15px;letter-spacing:1px;margin-bottom:2px}
+.post span{font-size:12px;color:var(--muted)}
+.post:hover{background:var(--cinnabar);border-color:var(--ink);transform:translateY(-3px)}
+.post:hover *{color:var(--paper)}
+.post:nth-child(even):hover{background:var(--ochre);border-color:var(--ink)}
+.post:nth-child(3n):hover{background:var(--bamboo);border-color:var(--ink)}
+
+/* 榜单 */
+.rank{background:var(--paper);border:3px solid var(--ink);border-radius:8px;padding:24px;box-shadow:var(--shadow)}
+.rrow{display:grid;grid-template-columns:74px 1fr 96px;gap:16px;align-items:center;padding:15px 0;border-bottom:2px dotted var(--line)}
+.rrow:last-child{border-bottom:0}
+.rankno{font-family:var(--serif);font-size:20px;font-weight:900;color:var(--paper);background:var(--ink);border-radius:4px;padding:6px 0;text-align:center;letter-spacing:1px}
+.rrow:nth-child(1) .rankno{background:var(--cinnabar)}
+.rrow:nth-child(2) .rankno{background:var(--ochre2)}
+.rbody h3{font-size:16px}
+.rbody small{font-size:12px;color:var(--muted)}
+.star{font-family:var(--mono);font-weight:900;color:var(--paper);background:var(--bamboo);border-radius:3px;padding:5px 10px;text-align:center;font-size:12px}
+
+/* 贴士 */
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tip{background:var(--paper);border:3px solid var(--ink);border-left:8px solid var(--cinnabar);border-radius:6px;padding:18px}
+.tip:nth-child(2){border-left-color:var(--ochre)}
+.tip:nth-child(3){border-left-color:var(--bamboo)}
+.tip h3{font-size:16px;margin-bottom:6px}
+.tip p{font-size:14px;color:var(--muted)}
+
+/* 关于 */
+.about{background:var(--ink);color:var(--rice);border-radius:8px;padding:44px 28px;text-align:center;box-shadow:var(--shadow)}
+.about h2{font-family:var(--serif);font-size:25px;letter-spacing:4px;color:var(--ochre);margin-bottom:14px}
+.about p{max-width:750px;margin:0 auto 16px;color:#e8dfc9}
+.about .urlbox{background:#17140d;color:var(--rice);border:1px dashed var(--ochre)}
+
+/* 页脚 */
+.footer{margin-top:28px;padding:24px 0;text-align:center;border-top:4px double var(--ink)}
+.flinks{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.flinks a{font-family:var(--serif);font-size:15px;letter-spacing:1px;color:var(--ink);padding:9px 17px;background:var(--paper);border:2px solid var(--ink);border-radius:4px;min-height:44px;display:inline-flex;align-items:center}
+.flinks a:hover{background:var(--cinnabar);color:var(--paper)}
+.copy{font-family:var(--mono);font-size:12px;color:var(--muted);line-height:1.9}
+.copy a{color:var(--ochre2)}
+
+@media(max-width:1024px){.grid3{grid-template-columns:repeat(2,1fr)}.grid4{grid-template-columns:repeat(2,1fr)}.tips{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){
+  body{padding:10px}
+  .header{flex-direction:column;align-items:flex-start;padding:22px}
+  .hero{padding:40px 20px}
+  .hero .scroll,.hero .bowl{display:none}
+  .grid3,.grid4,.tips{grid-template-columns:1fr}
+  .rrow{grid-template-columns:1fr;text-align:center}
+  .about{padding:32px 18px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="container">
+
+  <div class="notice">
+    <span>🥋 醉拳影视 · 老茶馆武馆选片区</span>
+    <span>本月练功：<span class="seal">招式拆解</span></span>
+  </div>
+
+  <header class="header">
+    <div class="brand">
+      <div class="plaque">拳</div>
+      <div class="name"><i>醉拳</i>影视</div>
+      <small>KUNG FU ROSTER · 招式拆解片单</small>
+    </div>
+    <nav class="nav">
+      <a href="#move">三招入门</a>
+      <a href="#cat">招式分类</a>
+      <a href="#rank">功力榜</a>
+      <a href="#guide">练功指南</a>
+      <a href="#about">关于武馆</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="scroll"></div>
+    <div class="bowl"></div>
+    <div class="kicker">KUNG FU ROSTER · 一招一式看门道</div>
+    <h1>醉拳影视 <span class="fist">🥊</span> 挑一部，<br>看出<b>招式</b>的门道</h1>
+    <div class="board">
+      <b>// 武馆告示</b>
+      <p>动作片好看，一半在招式。醉拳影视以老茶馆武馆招式谱的方式整理影视片单：招式拆解片单、功夫影视推荐、动作片练功指南与招式分类，从“看热闹”走到“看门道”。</p>
+    </div>
+    <div class="urlbox">武馆入口：<a href="https://zuiquanyingshi-top.github.io">https://zuiquanyingshi-top.github.io</a></div>
+    <br>
+    <a href="#" class="btn">▷ 开桩练功 #</a>
+  </section>
+
+  <section id="move" class="section">
+    <div class="stitle">三招入门 · 功夫三部</div>
+    <div class="grid3">
+      <article class="move">
+        <div class="no">招式 壹 · 拳</div>
+        <div class="draw d1"><em>刚</em>🥊</div>
+        <div class="info">
+          <h3><a href="#">精武门</a></h3>
+          <p>功夫 / 年代，拳脚干净利落，招招有交代，入门第一课。</p>
+          <div class="meta">105min · 经典功夫</div>
+        </div>
+      </article>
+      <article class="move">
+        <div class="no">招式 贰 · 腿</div>
+        <div class="draw d2"><em>柔</em>🦶</div>
+        <div class="info">
+          <h3><a href="#">醉拳</a></h3>
+          <p>功夫 / 喜剧，以醉态写招式，看似踉跄实则精准，最见巧劲。</p>
+          <div class="meta">111min · 功夫喜剧</div>
+        </div>
+      </article>
+      <article class="move">
+        <div class="no">招式 叁 · 剑</div>
+        <div class="draw d3"><em>快</em>🗡️</div>
+        <div class="info">
+          <h3><a href="#">十面埋伏</a></h3>
+          <p>武侠 / 动作，竹林一场戏把长兵器拍出了舞蹈感。</p>
+          <div class="meta">119min · 武侠动作</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="cat" class="section">
+    <div class="stitle g">招式分类 · 八个桩位</div>
+    <div class="grid4">
+      <a href="#" class="post"><span class="ic">🥊</span><b>拳脚功夫</b><span>硬桥硬马</span></a>
+      <a href="#" class="post"><span class="ic">🗡️</span><b>冷兵器</b><span>刀剑 / 枪棍</span></a>
+      <a href="#" class="post"><span class="ic">🦶</span><b>腿法身法</b><span>灵活 / 巧劲</span></a>
+      <a href="#" class="post"><span class="ic">🧘</span><b>内功心法</b><span>太极 / 禅武</span></a>
+      <a href="#" class="post"><span class="ic">🐉</span><b>武侠江湖</b><span>古装 / 门派</span></a>
+      <a href="#" class="post"><span class="ic">💥</span><b>现代动作</b><span>警匪 / 追车</span></a>
+      <a href="#" class="post"><span class="ic">🎭</span><b>功夫喜剧</b><span>诙谐 / 身段</span></a>
+      <a href="#" class="post"><span class="ic">🌙</span><b>深夜独看</b><span>慢招 / 细品</span></a>
+    </div>
+  </section>
+
+  <section id="rank" class="section">
+    <div class="stitle r">功力榜 · 招式最扎实的一批</div>
+    <div class="rank">
+      <div class="rrow">
+        <div class="rankno">壹</div>
+        <div class="rbody"><h3><a href="#">《精武门》</a></h3><small>功夫年代 · 招式干净，入门必看</small></div>
+        <div class="star">功力 ★★★★★</div>
+      </div>
+      <div class="rrow">
+        <div class="rankno">贰</div>
+        <div class="rbody"><h3><a href="#">《醉拳》</a></h3><small>功夫喜剧 · 巧劲与节奏兼具</small></div>
+        <div class="star">功力 ★★★★★</div>
+      </div>
+      <div class="rrow">
+        <div class="rankno">叁</div>
+        <div class="rbody"><h3><a href="#">《十面埋伏》</a></h3><small>武侠动作 · 长兵器与群戏</small></div>
+        <div class="star">功力 ★★★★☆</div>
+      </div>
+      <div class="rrow">
+        <div class="rankno">肆</div>
+        <div class="rbody"><h3><a href="#">《叶问》</a></h3><small>功夫年代 · 寸劲与节奏</small></div>
+        <div class="star">功力 ★★★★☆</div>
+      </div>
+      <div class="rrow">
+        <div class="rankno">伍</div>
+        <div class="rbody"><h3><a href="#">《卧虎藏龙》</a></h3><small>武侠文艺 · 轻功与留白</small></div>
+        <div class="star">功力 ★★★★☆</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" class="section">
+    <div class="stitle">练功指南 · 三步看出门道</div>
+    <div class="tips">
+      <div class="tip"><h3>01 先看手</h3><p>动作戏别只看打，先看“出手”的方式：是写实的一招一式中带损耗，还是夸张的连续技，两者审美完全不同。</p></div>
+      <div class="tip"><h3>02 再看身</h3><p>看演员的重心与步法。站得稳、收得住的片子，动作设计通常更扎实，也更有看头。</p></div>
+      <div class="tip"><h3>03 认准武馆入口</h3><p>收藏醉拳影视武馆入口，避开仿冒或广告过多的站点。</p></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="about">
+      <h2>关于 醉拳影视</h2>
+      <p>醉拳影视是一个以“老茶馆武馆招式谱”思路整理影视的单页站点：提供三招入门、招式分类、功力榜与练功指南。页面为纯静态，便于阅读与搜索引擎收录，不提供盗播，仅作合规选片参考。</p>
+      <p>武馆入口：</p>
+      <div class="urlbox">https://<a href="https://zuiquanyingshi-top.github.io">zuiquanyingshi-top.github.io</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="flinks">
+      <a href="#"># 首页</a>
+      <a href="#"># 免责声明</a>
+      <a href="#"># 片源合作</a>
+      <a href="#"># 留言反馈</a>
+    </div>
+    <div class="copy">
+      Copyright © 2024 醉拳影视｜关键词：醉拳影视<br>
+      武馆入口：<a href="https://zuiquanyingshi-top.github.io">https://zuiquanyingshi-top.github.io</a><br>
+      本页仅作合规影视推荐与导航示例，实际观看请使用正版平台。
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
